@@ -26,8 +26,6 @@ contract ERC20Pauser is Context, AccessControlEnumerable, ERC20Burnable, ERC20Pa
         ERC20(name, symbol)
     {
         _setupRole(DEFAULT_ADMIN_ROLE, _msgSender());
-
-        _setupRole(MINTER_ROLE, _msgSender());
         _setupRole(PAUSER_ROLE, _msgSender());
 
         super._mint(multisig, totalSupply);
