@@ -1,7 +1,7 @@
 {
   "author": "",
   "dependencies": {
-    "@openzeppelin/contracts": "^4.0.0"
+    "@openzeppelin/contracts": "^4.3.0"
   },
   "description": "",
   "devDependencies": {
