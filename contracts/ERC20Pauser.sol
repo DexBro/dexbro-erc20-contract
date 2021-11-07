@@ -1,4 +1,4 @@
-// contracts/erc20/ERC20Pauser.sol
+// contracts/ERC20Pauser.sol
 // SPDX-License-Identifier: MIT
 
 pragma solidity ^0.8.0;
@@ -9,11 +9,10 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Pausable.sol";
 
 contract ERC20Pauser is Context, AccessControlEnumerable, ERC20Burnable, ERC20Pausable {
-    bytes32 public constant MINTER_ROLE = keccak256("MINTER_ROLE");
     bytes32 public constant PAUSER_ROLE = keccak256("PAUSER_ROLE");
 
     /**
-     * @dev Grants `DEFAULT_ADMIN_ROLE`, `MINTER_ROLE` and `PAUSER_ROLE` to the
+     * @dev Grants `DEFAULT_ADMIN_ROLE`, and `PAUSER_ROLE` to the
      * account that deploys the contract.
      *
      * See {ERC20-constructor}.
