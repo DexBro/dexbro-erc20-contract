@@ -1,0 +1,9 @@
+.idea
+.development.json
+.production.json
+.DS_Store
+artifacts
+flattened
+cache
+build
+node_modules
